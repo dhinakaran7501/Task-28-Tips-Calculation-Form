@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tips Form</title>
+</head>
+
+<body>
+    <h2>Tips Calculation Form</h2>
+    <div class="form">
+        <fieldset>
+            <legend>Bill Amount Details:</legend>
+            <div class="border_container">
+                <div class="heading_section">
+                    <h1>Billing Amount Calculation Form</h1>
+                </div>
+                <div class="form_section1">
+                    <div class="first_name">
+                        <label for="fname">Bill Amount:</label>
+                        <input type="number" id="fname" name="fname" placeholder="Bill Amount*" required>
+                    </div>
+                    <div class="last_name">
+                        <label for="lname">Tips(%):</label>
+                        <input type="number" id="lname" name="lname" placeholder="Tips in Percentage*" required>
+                    </div>
+                    <div class="dob_sec">
+                        <label for="dob">Tip Amount(Rupees):</label>
+                        <input type="number" id="dob" name="dob" placeholder="Tips Amount in Rupees" disabled>
+                    </div>
+                    <div class="email_sec">
+                        <label for="email">Total Amount:</label>
+                        <input type="number" id="email" name="email" placeholder="Total Amount" disabled>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="submit" onclick="calculation()">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
